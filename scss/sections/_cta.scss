@@ -1,0 +1,104 @@
+.cta {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-image: url('../images/cta_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: 157px;
+  min-height: 516px;
+  padding: 0 20px;
+  @media (max-width: 768px) {
+    margin-top: 40px;
+    min-height: 400px;
+  }
+  @media (max-width: 576px) {
+    background-attachment: scroll;
+    min-height: 350px;
+  }
+  @media (max-width: 400px) {
+    min-height: 420px;
+  }
+  /* .cta__title */
+  &__title {
+    text-align: center;
+    padding-top: 140px;
+    color: #fff;
+    font-size: 40px;
+    line-height: 57px;
+    @media (max-width: 768px) {
+      padding-top: 60px;
+    }
+    @media (max-width: 576px) {
+      font-size: 30px;
+      line-height: 120%;
+    }
+
+  }
+  /* .cta__desc */
+  &__desc {
+    line-height: 38px;
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    @media (max-width: 576px) {
+      font-size: 20px;
+      margin-top: 5px;
+      line-height: 120%;
+    }
+  }
+  /* .cta__buttons */
+  &__buttons {
+    display: flex;
+    gap: 16px;
+    max-width: 331px;
+    margin: 0 auto;
+    margin-top: 50px;
+    @media (max-width: 576px) {
+      margin-top: 20px;
+    }
+    @media (max-width: 400px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+  /* .cta__button-fill */
+  &__button-fill {
+    padding: 18px 31px;
+    border: none;
+    font-size: 16px;
+    line-height: 28px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    background: #FA4A0C;
+    transition: .3s all ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  /* .cta__button-outline */
+  &__button-outline {
+    transition: .3s all ease;
+    color: #fff;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 16px 45px;
+    border: 1px #fff solid;
+    font-size: 16px;
+    background: none;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

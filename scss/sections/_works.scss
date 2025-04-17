@@ -1,0 +1,102 @@
+.works {
+  /* .works__line */
+  &__line {
+    max-width: 884px;
+    margin: 0 auto;
+    margin-top: 597px;
+    height: 3px;
+    background: #E4E4E4;
+    @media (max-width: 768px) {
+      margin-top: 400px;
+    }
+    @media (max-width: 576px) {
+      margin-top: 300px;
+    }
+  }
+  /* .works__title */
+  &__title {
+    font-family: 'Poppins';
+    margin-top: 72px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 36px;
+    color: #000;
+  }
+  /* .works__wrapper */
+  &__wrapper {
+    display: flex;
+    max-width: 1040px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 27px;
+    &:nth-child(4){
+      max-width: 950px;
+    }
+    &:nth-child(5){
+      margin-top: 80px;
+      padding-left: 80px;
+    }
+    @media (max-width: 991px) {
+      flex-direction: column;
+      &:nth-child(4){
+        flex-direction: column-reverse;
+      }
+      &:nth-child(5){
+        margin-top: 0;
+        padding-left: 0;
+      }
+    }
+  }
+  /* .works__container-img */
+  &__container-img {
+    margin-top: 115px;
+    margin-left: 30px;
+    filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
+    @media (max-width: 991px) {
+      max-width: 50%;
+      margin: 0 auto;
+      margin-top: 60px;
+    }
+  }
+  /* .works__content-block */
+  &__content-block {
+    margin-top: 227px;
+    @media (max-width: 991px) {
+      text-align: center;
+      margin-top: 50px;
+    }
+  }
+  /* .works__content-title */
+  &__content-title {
+    margin-top: 35px;
+    font-size: 24px;
+    color: #FA4A0C;
+    @media (max-width: 576px) {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  }
+  /* .works__content-subtitle */
+  &__content-subtitle {
+    line-height: 57px;
+    color: #252B42;
+    font-size: 40px;
+    max-width: 561px;
+    @media (max-width: 991px) {
+      font-weight: 500;
+      margin: 0 auto;
+    }
+  }
+  /* .works__content-desc */
+  &__content-desc {
+    color: #737373;
+    font-size: 24px;
+    max-width: 467px;
+    font-weight: 500;
+    @media (max-width: 991px) {
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
+}

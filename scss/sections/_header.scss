@@ -1,0 +1,126 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1330px;
+  margin: 0 20px;
+  padding: 28px 0;
+  padding-left: 50px;
+  padding-right: 20px;
+  align-items: center;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    padding: 14px 0;
+    padding-left: 20px;
+  }
+}
+.logo {
+}
+.nav {
+  /* .nav__list */
+  &__list {
+    display: flex;
+    gap: 104px;
+
+    @media (max-width: 991px){
+      gap: 60px;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  /* .nav__list-item */
+  &__list-item {
+    & .active {
+      color: #FA4A0C;
+    }
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    a{
+      text-decoration: none;
+    }
+    &:hover {
+      transition: .3s all ease;
+      opacity: 0.8;
+    }
+  }
+}
+.burger {
+  background: #F4F0EC;
+
+  &__button {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    display: none;
+    border: none;
+    background: none;
+    margin-right: 20px;
+    cursor: pointer;
+    @media (max-width: 768px) {
+      display: block;
+    }
+
+
+    span {
+      height: 5px;
+      width: 100%;
+      background: #000;
+      border-radius: 25px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: 0.3s ease;
+    }
+
+    span:nth-child(1) { top: 25%; }
+    span:nth-child(2) { top: 50%; }
+    span:nth-child(3) { top: 75%; }
+
+    &.active {
+      span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+      span:nth-child(2) {
+        opacity: 0;
+      }
+      span:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    background: #F4F0EC;
+    transition: all 0.5s ease;
+    font-size: 30px;
+    text-align: center;
+
+    &.active {
+      display: block;
+      max-height: 350px;
+      padding: 0;
+    }
+  }
+
+  &__menu-item {
+    padding: 10px 0;
+    list-style: none;
+    a{
+      text-decoration: none;
+    }
+    &.active a{
+      color: #FA4A0C;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+// media query example
