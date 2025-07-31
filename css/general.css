@@ -113,6 +113,7 @@
 }
 .burger__menu {
   display: none;
+  margin: 0;
   max-height: 0;
   overflow: hidden;
   background: #F4F0EC;
@@ -123,8 +124,13 @@
 }
 .burger__menu.active {
   display: block;
-  max-height: 350px;
-  padding: 0;
+  max-height: 500px;
+  padding: 20px 0;
+}
+@media (min-width: 768px) {
+  .burger__menu.active {
+    display: none;
+  }
 }
 .burger__menu-item {
   padding: 10px 0;
